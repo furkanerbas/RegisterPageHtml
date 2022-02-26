@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/fontawesome.min.js">
+    <link rel="icon" href="favicon.jpg">
+    <title>Register</title>
+
+    <style>
+
+        body{
+            background: linear-gradient(45deg, #00dbde, #fc00ff);
+        }
+        .content{
+            width:21%;
+            height:76%;
+            background-color: white;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-radius: 8px;
+            padding: 34px 30px 45px
+        }
+        h1{
+            position: relative;
+            margin:0%;
+            font-family: 'Poppins', sans-serif;            
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .form-group{
+        position: relative;
+        top:10%;       
+        }
+        label{
+            font-family: 'Poppins', sans-serif;
+            font-size: 65%;
+            text-align: left;
+        }
+
+        input,select{
+            width: 100% ;
+            height: 30px;
+            text-align:left;
+            border:none;
+            border-bottom: 1px solid;
+            font-family: 'Poppins', sans-serif;
+            color: #000;
+        }
+        input:focus{
+            outline: none;
+        }
+        textarea{
+            width: 100%;
+            height:100px;
+            border:none;
+            border-bottom: 1px solid;
+            font-family: 'Poppins', sans-serif;
+        }
+        textarea:focus{
+            outline:none;
+        }
+        button{
+            width: 100%;
+            border-radius: 20px;
+            height: 38px;
+            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            border: none;
+            color: white;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            top:15%;
+        }
+        button>i{
+            position:absolute;
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+<body>  
+    <div class="content">
+        <h1>Say Hello!</h1>
+        <div class="form-group" style="margin-top:-25px">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+    <div class="form-group" style="margin-top:15px">
+        <label>E-mail</label>
+        <input type="text" placeholder="Enter your e-mail adress">
+    </div>
+    <div class="form-group" style="margin-top:15px">
+        <label>Needed Services</label>
+        <select name="services">
+            <option>Choose Services</option>          
+        </select>
+    </div>
+        <div class="form-group" style="margin-top:15px">
+            <label>Budget</label>
+            <select name="budget">
+                <option>Choose Budget</option>          
+            </select>
+    </div>
+    <div class="form-group" style="margin-top:15px">
+        <label>Message</label>
+        <textarea name="message" rows="10" placeholder="Your message here..."></textarea>
+    </div>
+    <button>Submit <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i></button>
+    </div>
+</body>
+</html>
